@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\close1.png" />
+    <None Remove="images\close2.png" />
+    <None Remove="images\finished.png" />
+    <None Remove="images\imp1.png" />
+    <None Remove="images\imp2.png" />
+    <None Remove="images\imp3.png" />
+    <None Remove="images\load.png" />
+    <None Remove="images\mytask.png" />
+    <None Remove="images\plan.png" />
+    <None Remove="images\setting1.png" />
+    <None Remove="images\setting2.png" />
+    <None Remove="images\sun1.png" />
+    <None Remove="images\sun2.png" />
+    <None Remove="images\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\close1.png" />
+    <Resource Include="images\close2.png" />
+    <Resource Include="images\finished.png" />
+    <Resource Include="images\imp1.png" />
+    <Resource Include="images\imp2.png" />
+    <Resource Include="images\imp3.png" />
+    <Resource Include="images\load.png" />
+    <Resource Include="images\mytask.png" />
+    <Resource Include="images\plan.png" />
+    <Resource Include="images\setting1.png" />
+    <Resource Include="images\setting2.png" />
+    <Resource Include="images\sun1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\sun2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\user.png" />
+  </ItemGroup>
+
+</Project>
