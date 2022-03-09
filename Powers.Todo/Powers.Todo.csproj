@@ -44,4 +44,8 @@
     <Resource Include="images\user.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="styles\" />
+  </ItemGroup>
+
 </Project>
