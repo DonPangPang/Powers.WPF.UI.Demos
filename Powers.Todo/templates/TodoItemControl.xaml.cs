@@ -24,5 +24,7 @@ namespace Powers.Todo.templates
         {
             InitializeComponent();
         }
+
+        public string ImageSource { get; set; } = "./images/finished.png";
     }
 }

@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Powers.Todo.templates"
              mc:Ignorable="d"
-             MinHeight="60" MinWidth="200">
+             MinHeight="60" MinWidth="200" d:DataContext="{d:DesignData }">
     <Border Height="60" Background="White" CornerRadius="10">
         <Border.Effect>
             <DropShadowEffect BlurRadius="5" Color="Gray" Direction="-60" Opacity="0.4" RenderingBias="Performance" ShadowDepth="1">
@@ -15,8 +15,9 @@
             </DropShadowEffect>
         </Border.Effect>
         <StackPanel Orientation="Horizontal">
-            <Image Source="../images/finished.png" Height="30" Margin="15,0,0,0"></Image>
-            <Label VerticalContentAlignment="Center" Margin="15,5,0,5" FontSize="16">哈哈哈哈</Label>
+            <Image Source="{Binding (local:TodoItemControl.ImageSource)}" Height="30" Margin="15,0,0,0"></Image>
+            <Label VerticalContentAlignment="Center" Margin="15,5,0,5" FontSize="16">哈哈哈哈
+            </Label>
         </StackPanel>
     </Border>
 </UserControl>
