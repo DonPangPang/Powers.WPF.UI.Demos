@@ -130,7 +130,7 @@
                             <Label FontSize="20">我の一天</Label>
                         </StackPanel>
                         <StackPanel Margin="0,20,0,0">
-                            <templates:TodoItemControl ImageSource="./images/finished.png" Width="300" Height="200"></templates:TodoItemControl>
+                            <templates:TodoItemControl CornerRadius="10" ImageSource="images/imp1.png" ContentText="哈哈哈"></templates:TodoItemControl>
                             <!--<Border Height="60" Background="White" CornerRadius="10">
                                 <Border.Effect>
                                     <DropShadowEffect BlurRadius="5" Color="Gray" Direction="-60" Opacity="0.4" RenderingBias="Performance" ShadowDepth="1">

@@ -5,8 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Powers.Todo.templates"
              mc:Ignorable="d"
-             MinHeight="60" MinWidth="200" d:DataContext="{d:DesignData }">
-    <Border Height="60" Background="White" CornerRadius="10">
+             DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+             MinHeight="30" MinWidth="200">
+    <Border Height="60" Background="White" CornerRadius="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:TodoItemControl},Path=CornerRadius,UpdateSourceTrigger=PropertyChanged}">
         <Border.Effect>
             <DropShadowEffect BlurRadius="5" Color="Gray" Direction="-60" Opacity="0.4" RenderingBias="Performance" ShadowDepth="1">
                 <Storyboard.TargetProperty>
@@ -15,8 +16,8 @@
             </DropShadowEffect>
         </Border.Effect>
         <StackPanel Orientation="Horizontal">
-            <Image Source="{Binding (local:TodoItemControl.ImageSource)}" Height="30" Margin="15,0,0,0"></Image>
-            <Label VerticalContentAlignment="Center" Margin="15,5,0,5" FontSize="16">哈哈哈哈
+            <Image x:Name="ImageTodoItemIcon" Source="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:TodoItemControl},Path=ImageSource,UpdateSourceTrigger=PropertyChanged}" Height="30" Width="30" Margin="15,0,0,0"></Image>
+            <Label VerticalAlignment="Center" Margin="15,5,0,5" FontSize="16" Content="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:TodoItemControl},Path=ContentText,UpdateSourceTrigger=PropertyChanged}">
             </Label>
         </StackPanel>
     </Border>

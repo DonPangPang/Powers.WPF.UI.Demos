@@ -25,6 +25,10 @@ namespace Powers.Todo.templates
             InitializeComponent();
         }
 
-        public string ImageSource { get; set; } = "./images/finished.png";
+        public ImageSource ImageSource { get; set; }
+
+        public string ContentText { get; set; }
+
+        public CornerRadius CornerRadius { get; set; } = new CornerRadius(10);
     }
 }
